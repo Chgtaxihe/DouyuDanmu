@@ -32,7 +32,7 @@ def handle_msg(s, data_package):
     print('receive:' + data_package.__str__())
     typ = data_package.type
     if typ == 'chatmsg':
-        print("[%s]%s"%(data_package.nn,data_package.txt))
+        print("[%s]%s"%(data_package.nn, data_package.txt))
 
 
 class DataPackage(object):
