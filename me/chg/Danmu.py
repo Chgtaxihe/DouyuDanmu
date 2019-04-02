@@ -79,9 +79,10 @@ class DataPackage(object):
 
 
 def keep_alive():
-    data = DataPackage(689, type='mrkl').pack()
-    s.send(data)
-    time.sleep(40)
+    while True:
+        data = DataPackage(689, type='mrkl').pack()
+        s.send(data)
+        time.sleep(40)
 
 
 if __name__ == '__main__':
